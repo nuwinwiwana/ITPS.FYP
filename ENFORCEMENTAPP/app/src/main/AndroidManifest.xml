@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EnforcementApp">
+        <activity android:name=".editprofilepage"></activity>
+        <activity android:name=".status" />
+        <activity android:name=".request" />
+        <activity android:name=".profile" />
+        <activity android:name=".setting" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".forgotPassword" />
+        <activity android:name=".verify" />
+        <activity android:name=".Login" />
+        <activity android:name=".register" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
