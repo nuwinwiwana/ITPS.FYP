@@ -22,8 +22,8 @@ import java.util.Objects;
 
 public class dashboard extends AppCompatActivity {
 
-    TextView  fullname,more, celciusPer, humidtyPer, pressurePer;
-    CardView c1, c2,c3,c4;
+    TextView  fullname;
+    CardView c1, c2,c3;
     ImageView widget;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     FirebaseDatabase databaseReference;

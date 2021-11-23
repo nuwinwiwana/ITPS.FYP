@@ -9,7 +9,6 @@
     android:orientation="vertical"
     android:scrollbarStyle="insideInset"
     tools:context=".register">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:hint="Mobile"
         android:inputType="phone"
@@ -62,7 +60,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -98,6 +95,22 @@
         android:layout_marginEnd="20dp"
         android:hint="confirm password"
         android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"  />
+
+    <EditText
+        android:id="@+id/Ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Ic Number"
+        android:inputType="text"
         android:maxLines="1"
         android:paddingStart="20dp"
         android:paddingLeft="20dp"

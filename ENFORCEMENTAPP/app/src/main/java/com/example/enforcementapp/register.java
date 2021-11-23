@@ -41,7 +41,7 @@ public class register extends AppCompatActivity {
         final EditText phone = findViewById(R.id.phone);
         final EditText password = findViewById(R.id.password);
         final EditText conPassword = findViewById(R.id.conPassword);
-
+        final EditText ic = findViewById(R.id.Ic);
         final Button registerBtn = findViewById(R.id.registerBtn);
         final TextView loginNowBtn = findViewById(R.id.loginNow);
 
@@ -54,14 +54,15 @@ public class register extends AppCompatActivity {
                 final String phoneTxt = phone.getText().toString();
                 final String passwordTxt = password.getText().toString();
                 final String conPasswordTxt = conPassword.getText().toString();
+                final String icTxt = ic.getText().toString();
 
-                if (fullnameTxt.isEmpty() || emailTxt.isEmpty() || phoneTxt.isEmpty() || passwordTxt.isEmpty()) {
+                if (fullnameTxt.isEmpty() || icTxt.isEmpty() ||  emailTxt.isEmpty() || phoneTxt.isEmpty() || passwordTxt.isEmpty()) {
                     Toast.makeText(register.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
                 } else if (!passwordTxt.equals(conPasswordTxt)) {
                     Toast.makeText(register.this, "password are not matching", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    createAccount(emailTxt, passwordTxt, phoneTxt, fullnameTxt);
+                    createAccount(emailTxt,icTxt, passwordTxt, phoneTxt, fullnameTxt);
 
 
 
@@ -81,7 +82,7 @@ public class register extends AppCompatActivity {
 
     }
 
-    private void createAccount(String email, String password, String phone,String fullname) {
+    private void createAccount(String ic,String email, String password, String phone,String fullname) {
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -103,7 +104,7 @@ public class register extends AppCompatActivity {
                                         databaseReference.child("admins").child(user.getUid()).child("email").setValue(email);
                                         databaseReference.child("admins").child(user.getUid()).child("password").setValue(password);
                                         databaseReference.child("admins").child(user.getUid()).child("phone").setValue(phone);
-
+                                        databaseReference.child("admins").child(user.getUid()).child("ic").setValue(ic);
                                         Toast.makeText(register.this, "user registered succsesfully", Toast.LENGTH_SHORT).show();
                                         if(!user.isEmailVerified()){
                                             startActivity(new Intent(register.this,verify.class));

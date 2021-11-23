@@ -9,16 +9,16 @@ public class usermodel {
     private String ic;
 
 
-    public usermodel() {}
 
-    public usermodel(String email,String ic, String fullname,String password,String phone) {
+
+
+    public usermodel(String email,String fullname,String phone,String password,String ic) {
+
         this.email = email;
         this.fullname = fullname;
         this.phone = phone;
         this.password = password;
         this.ic = ic;
-
-
 
     }
 
@@ -41,6 +41,10 @@ public class usermodel {
     public String getIc(){
         return ic;
     }
+
+
+
+
 
 
 
