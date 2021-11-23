@@ -140,7 +140,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/white"
-                    android:text="Request"
+                    android:text="Scanner"
                     android:textSize="24sp"
                     app:fontFamily="sans-serif-condensed" />
                 <ImageView
@@ -149,7 +149,7 @@
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
-                    app:srcCompat="@drawable/request" />
+                    app:srcCompat="@drawable/barcode_scanner__1_" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -181,7 +181,7 @@
                     android:layout_below="@id/bus1"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:text="Status"
+                    android:text="Logout"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     app:fontFamily="sans-serif-condensed" />
@@ -191,7 +191,7 @@
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
-                    app:srcCompat="@drawable/approval" />
+                    app:srcCompat="@drawable/logout__2___1_" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

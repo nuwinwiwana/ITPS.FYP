@@ -29,7 +29,7 @@ import java.util.Objects;
 
 public class editprofilepage extends AppCompatActivity {
 
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ikaen-a3973-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://itps-1c7c7-default-rtdb.asia-southeast1.firebasedatabase.app/");
     String UID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid(); // edited
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser(); //edited
     EditText profileFullName, profileEmail, profilePhone;
@@ -47,7 +47,6 @@ public class editprofilepage extends AppCompatActivity {
         ChgPassBtn = findViewById(R.id.ChgPassBtn);
         ChgImgBtn = findViewById(R.id.ChgImgBtn);
         profileFullName = findViewById(R.id.fullnametv);
-        profileEmail = findViewById(R.id.emailtv);
         profilePhone = findViewById(R.id.phoneTv);
         profileImageView = findViewById(R.id.imageView2);
         saveBtn = findViewById(R.id.saveBtn);

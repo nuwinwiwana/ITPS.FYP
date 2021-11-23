@@ -25,12 +25,11 @@ public class dashboard extends AppCompatActivity {
     TextView  fullname,more, celciusPer, humidtyPer, pressurePer;
     CardView c1, c2,c3,c4;
     ImageView widget;
-    // DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ikaen-a3973-default-rtdb.asia-southeast1.firebasedatabase.app/");
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     FirebaseDatabase databaseReference;
     FirebaseDatabase Dbase = FirebaseDatabase.getInstance();
     String UID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
-    // FirebaseDatabase firebaseDatabase;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,24 +67,6 @@ public class dashboard extends AppCompatActivity {
         });
 
 
-
-        DatabaseReference pres = database.getReference("Pressure/");
-
-        pres.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-
-                Map<String, Object> pres = (Map<String, Object>) snapshot.getValue();
-                Log.d("owo","dapat" + pres.get("Hpa"));
-                pressurePer.setText(pres.get("Hpa").toString());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
 
         widget.setOnClickListener(new View.OnClickListener() {
 

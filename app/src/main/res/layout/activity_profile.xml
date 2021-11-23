@@ -48,6 +48,35 @@
         app:layout_constraintTop_toBottomOf="@+id/fullname" />
 
     <TextView
+        android:id="@+id/Ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IC"
+        android:textColor="#38167C"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullnametv"
+        />
+
+
+    <TextView
+        android:id="@+id/IcTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="011123101"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ic" />
+
+    <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,8 +88,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fullnametv"
+        app:layout_constraintTop_toBottomOf="@+id/IcTv"
         />
+
 
     <TextView
         android:id="@+id/emailtv"

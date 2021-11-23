@@ -6,6 +6,7 @@ public class usermodel {
     private String email;
     private String phone;
     private String password;
+    private String ic;
 
 
     public usermodel() {}
@@ -15,6 +16,7 @@ public class usermodel {
         this.fullname = fullname;
         this.phone = phone;
         this.password = password;
+        this.ic = ic;
 
 
 
@@ -34,6 +36,9 @@ public class usermodel {
 
     public String getPassword(){
         return password;
+    }
+    public String getIc(){
+        return ic;
     }
 
 }

@@ -92,17 +92,17 @@ public class register extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             //updateUI(user);
 
-                            databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
+                            databaseReference.child("admins").addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                                     if (snapshot.hasChild(user.getUid())) {
                                         Toast.makeText(register.this, "email is already registered", Toast.LENGTH_SHORT).show();
                                     } else {
-                                        databaseReference.child("users").child(user.getUid()).child("fullname").setValue(fullname);
-                                        databaseReference.child("users").child(user.getUid()).child("email").setValue(email);
-                                        databaseReference.child("users").child(user.getUid()).child("password").setValue(password);
-                                        databaseReference.child("users").child(user.getUid()).child("phone").setValue(phone);
+                                        databaseReference.child("admins").child(user.getUid()).child("fullname").setValue(fullname);
+                                        databaseReference.child("admins").child(user.getUid()).child("email").setValue(email);
+                                        databaseReference.child("admins").child(user.getUid()).child("password").setValue(password);
+                                        databaseReference.child("admins").child(user.getUid()).child("phone").setValue(phone);
 
                                         Toast.makeText(register.this, "user registered succsesfully", Toast.LENGTH_SHORT).show();
                                         if(!user.isEmailVerified()){

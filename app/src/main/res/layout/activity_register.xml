@@ -106,6 +106,22 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"  />
 
+    <EditText
+        android:id="@+id/Ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Ic Number"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="0dp"
+        android:paddingRight="0dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"  />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/registerBtn"
         android:layout_width="match_parent"

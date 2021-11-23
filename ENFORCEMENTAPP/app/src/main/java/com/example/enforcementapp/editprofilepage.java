@@ -32,7 +32,7 @@ import java.util.Objects;
 
 public class editprofilepage extends AppCompatActivity {
 
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ikaen-a3973-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://itps-1c7c7-default-rtdb.asia-southeast1.firebasedatabase.app/");
     String UID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid(); // edited
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser(); //edited
     EditText profileFullName, profileEmail, profilePhone;
@@ -56,7 +56,7 @@ public class editprofilepage extends AppCompatActivity {
         saveBtn = findViewById(R.id.saveBtn);
         fAuth = FirebaseAuth.getInstance();
 
-        StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"profile.jpg");
+        StorageReference profileRef = storageReference.child("admins/"+fAuth.getCurrentUser().getUid()+"profile.jpg");
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
@@ -67,7 +67,7 @@ public class editprofilepage extends AppCompatActivity {
 
 
         //get data once
-        databaseReference.child("users").child(UID).get().addOnCompleteListener(task -> {
+        databaseReference.child("admins").child(UID).get().addOnCompleteListener(task -> {
             if (!task.isSuccessful()) {
                 Log.e("firebase", "Error getting data", task.getException());
             } else {
@@ -99,9 +99,9 @@ public class editprofilepage extends AppCompatActivity {
             user.updateEmail(email).addOnSuccessListener(unused -> {
                 Toast.makeText(editprofilepage.this, "saved", Toast.LENGTH_SHORT).show();
                 //update database after done update email
-                databaseReference.child("users").child(user.getUid()).child("fullname").setValue(profileFullName.getText().toString());
-                databaseReference.child("users").child(user.getUid()).child("email").setValue(email);
-                databaseReference.child("users").child(user.getUid()).child("phone").setValue(profilePhone.getText().toString());
+                databaseReference.child("admins").child(user.getUid()).child("fullname").setValue(profileFullName.getText().toString());
+                databaseReference.child("admins").child(user.getUid()).child("email").setValue(email);
+                databaseReference.child("admins").child(user.getUid()).child("phone").setValue(profilePhone.getText().toString());
                 //                Toast.makeText(editprofilepage.this, "Profile Updated", Toast.LENGTH_SHORT).show();
                 //                startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 //                finish();
@@ -135,7 +135,7 @@ public class editprofilepage extends AppCompatActivity {
                     user.updatePassword(newPassword).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
-                            databaseReference.child("users").child(user.getUid()).child("password").setValue(newPassword);
+                            databaseReference.child("admins").child(user.getUid()).child("password").setValue(newPassword);
                             Toast.makeText(editprofilepage.this, "Password Changed Successfully.", Toast.LENGTH_SHORT).show();
                         }
                     }).addOnFailureListener(e -> Toast.makeText(editprofilepage.this, "Password Changed Failed.", Toast.LENGTH_SHORT).show());
@@ -172,7 +172,7 @@ public class editprofilepage extends AppCompatActivity {
 
     private void uploadImageToFirebase(Uri imageUri) {
         //upload image to firebase storage
-        StorageReference fileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"profile.jpg");
+        StorageReference fileRef = storageReference.child("admins/"+fAuth.getCurrentUser().getUid()+"profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

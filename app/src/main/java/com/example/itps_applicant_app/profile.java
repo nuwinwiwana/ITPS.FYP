@@ -30,13 +30,11 @@ import static android.content.ContentValues.TAG;
 public class profile extends AppCompatActivity {
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference databaseReference = database.getReferenceFromUrl("https://ikaen-a3973-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    DatabaseReference databaseReference = database.getReferenceFromUrl("https://itps-1c7c7-default-rtdb.asia-southeast1.firebasedatabase.app/");
     StorageReference storageReference = FirebaseStorage.getInstance().getReference();
     String UID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
     FirebaseAuth fAuth;
-    TextView fullname;
-    TextView email;
-    TextView phone;
+    TextView fullname, email,phone,ic;
     ImageView profileimageView2;
 
     @Override
@@ -47,6 +45,7 @@ public class profile extends AppCompatActivity {
         fullname = findViewById(R.id.fullnametv);
         email = findViewById(R.id.emailtv);
         phone = findViewById(R.id.phoneTv);
+        ic = findViewById(R.id.IcTv);
         profileimageView2 = findViewById(R.id.imageView2);
         getprofile();
         fAuth = FirebaseAuth.getInstance();
@@ -84,6 +83,7 @@ public class profile extends AppCompatActivity {
                 fullname.setText(userData.getFullname());
                 email.setText(userData.getemail());
                 phone.setText(userData.getPhone());
+                ic.setText(userData.getIc());
 
             }
         });
@@ -104,6 +104,7 @@ public class profile extends AppCompatActivity {
                 fullname.setText(user.getFullname());
                 email.setText(user.getemail());
                 phone.setText(user.getPhone());
+                ic.setText(user.getIc());
                 Log.d(TAG, "Value is: " + user.getFullname());
                 Log.d(TAG, "Value is: " + user.getemail());
                 Log.d(TAG, "Value is: " + user.getPhone());
