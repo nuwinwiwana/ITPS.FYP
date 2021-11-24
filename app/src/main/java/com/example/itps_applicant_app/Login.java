@@ -95,7 +95,9 @@ public class Login extends AppCompatActivity {
                             if(!user.isEmailVerified()){
                                 startActivity(new Intent(Login.this,verify.class));
                             }else{
+                                Log.d(TAG, "can enter dashboard");
                                 startActivity(new Intent(Login.this,dashboard.class));
+
                             }
                             //updateUI(user);
                         } else {

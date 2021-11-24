@@ -1,8 +1,8 @@
 package com.example.itps_applicant_app;
 
 public class formmodel {
-    private String fullname;
-    private String ic;
+    private String nama;
+    private String id;
     private String policeStn;
     private String travelReas;
     private String destinationAdd;
@@ -14,37 +14,21 @@ public class formmodel {
     private String address;
     private String citizenship;
 
-
-
-
-    public formmodel(String email, String password, String phone, String icTxt, String fullnameTxt, String travelReasTxt, String destinationAddTxt, String returnDateTxt, String depatureDateTxt, String dependentTxt, String veichlePlateTxt, String veichleTypeTxt) {
-
-
-        this.fullname = fullname;
-        this.policeStn = policeStn;
-        this.travelReas = travelReas;
-        this.ic = ic;
-        this.destinationAdd = destinationAdd;
-        this.returnDate = returnDate;
-        this.DepatureDate = DepatureDate;
-        this.dependent = dependent;
-        this.veichlePlate = veichlePlate;
-        this.VeichleType = VeichleType;
-        this.address = address;
-        this.citizenship = citizenship;
-
+    public formmodel(){
 
     }
 
-    public String getFullname() {
-        return fullname;
+
+
+
+
+
+    public String getNama() {
+        return nama;
     }
-
-
     public String getIc(){
-        return ic;
+        return id;
     }
-
     public String getPoliceStn(){
         return policeStn;
     }
@@ -73,4 +57,52 @@ public class formmodel {
         return citizenship;
     }
     public String getDependent(){ return dependent;    }
+
+    public void settravelReas(String travelReasTxt) {
+        this.travelReas = travelReasTxt;
+    }
+
+    public void setdestinationAdd(String destinationAddTxt) {
+        this.destinationAdd = destinationAddTxt;
+    }
+
+    public void setreturnDate(String returnDateTxt) {
+        this.returnDate = returnDateTxt;
+    }
+
+    public void setDepatureDate(String depatureDateTxt) {
+        this.DepatureDate = depatureDateTxt;
+    }
+
+    public void setdependent(String dependentTxt) {
+        this.dependent = dependentTxt;
+    }
+
+    public void setVeichleType(String veichleTypeTxt) {
+        this.VeichleType = veichleTypeTxt;
+    }
+
+    public void setveichlePlate(String veichlePlateTxt) {
+        this.veichlePlate = veichlePlateTxt;
+    }
+
+    public void setnama(String namaTxt) {
+        this.nama = namaTxt;
+    }
+
+    public void setid(String idTxt) {
+        this.id = idTxt;
+    }
+
+    public void setcitizenship(String citizenshipTxt) {
+        this.citizenship = citizenshipTxt;
+    }
+
+    public void setpoliceStn(String policeStnTxt) {
+        this.policeStn = policeStnTxt;
+    }
+
+    public void setaddress(String addressTxt) {
+        this.address = addressTxt;
+    }
 }
