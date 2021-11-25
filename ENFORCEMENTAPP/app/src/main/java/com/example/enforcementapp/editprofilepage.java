@@ -41,7 +41,7 @@ public class editprofilepage extends AppCompatActivity {
     Button saveBtn, ChgPassBtn, ChgImgBtn;
     StorageReference storageReference = FirebaseStorage.getInstance().getReference();
 
-    @SuppressLint("WrongViewCast")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

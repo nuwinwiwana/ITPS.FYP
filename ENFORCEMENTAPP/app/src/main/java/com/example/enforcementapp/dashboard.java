@@ -32,12 +32,11 @@ public class dashboard extends AppCompatActivity {
     TextView fullname;
     CardView c1, c2,c3;
     ImageView widget;
-    // DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ikaen-a3973-default-rtdb.asia-southeast1.firebasedatabase.app/");
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     FirebaseDatabase databaseReference;
     FirebaseDatabase Dbase = FirebaseDatabase.getInstance();
     String UID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
-    // FirebaseDatabase firebaseDatabase;
+
 
 
     @Override

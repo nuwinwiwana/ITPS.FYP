@@ -50,6 +50,7 @@ public class editprofilepage extends AppCompatActivity {
         profilePhone = findViewById(R.id.phoneTv);
         profileImageView = findViewById(R.id.imageView2);
         saveBtn = findViewById(R.id.saveBtn);
+        profileEmail = findViewById(R.id.emailtv);
         fAuth = FirebaseAuth.getInstance();
 
         StorageReference profileRef = storageReference.child("users/"+fAuth.getCurrentUser().getUid()+"profile.jpg");
