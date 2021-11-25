@@ -7,78 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d0718be-9ed7-436f-b27d-45bd61be7874" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/ApplicantList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/QrGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/dashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/editprofilepage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/forgotPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/setting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/usermodel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/verify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/approval.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/barcode_scanner__1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/documents__1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/gradient_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo__1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logout__2___1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/menu__3___1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/please_wait_your_status_is_pending.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/reject.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/reject__1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/request.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash_screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/splash_screen_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/user__2_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wall_clock__1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_applicant_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dashboard.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editprofilepage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr_gen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/java/com/example/enforcementapp/scanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_scanner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../website Tak jadi.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xtreme-admin-lite-master/xtreme-html/ltr/public/try.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/java/com/example/enforcementapp/dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/java/com/example/enforcementapp/dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/java/com/example/enforcementapp/setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/java/com/example/enforcementapp/setting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_editprofilepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_editprofilepage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_forgot_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/itps_applicant_app/request.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/java/com/example/itps_applicant_app/request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_editprofilepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_editprofilepage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_forgot_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xtreme-admin-lite-master/xtreme-html/ltr/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../xtreme-admin-lite-master/xtreme-html/ltr/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/QrGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/adminapp/QrGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr_gen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr_gen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[cc21d48f]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -232,21 +173,21 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1637876873315" />
-    <state width="1236" height="163" key="GridCell.Tab.0.bottom" timestamp="1637867822120">
+    <state width="1236" height="163" key="GridCell.Tab.0.bottom" timestamp="1637879672263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1637867822120" />
-    <state width="1236" height="163" key="GridCell.Tab.0.center" timestamp="1637867822119">
+    <state width="1236" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1637879672263" />
+    <state width="1236" height="163" key="GridCell.Tab.0.center" timestamp="1637879672263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1637867822119" />
-    <state width="1236" height="163" key="GridCell.Tab.0.left" timestamp="1637867822119">
+    <state width="1236" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1637879672263" />
+    <state width="1236" height="163" key="GridCell.Tab.0.left" timestamp="1637879672263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1637867822119" />
-    <state width="1236" height="163" key="GridCell.Tab.0.right" timestamp="1637867822119">
+    <state width="1236" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1637879672263" />
+    <state width="1236" height="163" key="GridCell.Tab.0.right" timestamp="1637879672263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1236" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1637867822119" />
+    <state width="1236" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1637879672263" />
   </component>
 </project>
