@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".profile">
+    tools:context=".editprofilepage">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -24,129 +24,128 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name"
-        android:textColor="#38167C"
+        android:textColor="#072446"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        />
 
-    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
+
+
+
+    <EditText
         android:id="@+id/fullnametv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Fullname"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fullname" />
-
-    <TextView
-        android:id="@+id/Ic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Police Id"
-        android:textColor="#38167C"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fullnametv"
-        />
-
-
-    <TextView
-        android:id="@+id/IcTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="011123101"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ic" />
-
     <TextView
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
-        android:textColor="#38167C"
+        android:textColor="#072446"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IcTv"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/fullnametv"/>
 
-    <TextView
+    <EditText
         android:id="@+id/emailtv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Email@ggg.com"
-        android:textSize="20dp"
+
         android:textColor="@color/white"
+        android:textSize="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/email"  />
+
+
+
 
     <TextView
         android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Phone Number"
-        android:textColor="#38167C"
+        android:textColor="#072446"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailtv" />
 
-    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtv"/>
+
+    <EditText
         android:id="@+id/phoneTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
         android:text="(+60)19-3352311"
         android:textColor="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
+        app:layout_constraintTop_toBottomOf="@+id/phone"  />
 
     <Button
-        android:id="@+id/editbtn"
+        android:id="@+id/ChgPassBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#38167C"
-        android:text="Edit Profile"
-        android:textColor="@color/white"
+        android:text="Change Password"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTv"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <Button
+        android:id="@+id/ChgImgBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#38167C"
+        android:text="Change Image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintTop_toBottomOf="@+id/ChgPassBtn"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#38167C"
+        android:text="Save Changes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChgImgBtn"
+        app:layout_constraintVertical_bias="0.185" />
 
 
 

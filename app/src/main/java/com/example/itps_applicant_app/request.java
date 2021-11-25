@@ -211,6 +211,8 @@ public class request extends AppCompatActivity {
     private void SelectImage()
     {
 
+
+
         // Defining Implicit Intent to mobile gallery
         Intent intent = new Intent();
         intent.setType("ICimage/*");
@@ -286,6 +288,7 @@ public class request extends AppCompatActivity {
 
             // Get the Uri of data
             filePath = data.getData();
+
             try {
 
                 // Setting image on image view using Bitmap
@@ -305,6 +308,9 @@ public class request extends AppCompatActivity {
                 // Log the exception
                 e.printStackTrace();
             }
+
+
+
         }
     }
     private void uploadImage()

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+<h1>IPTS ADMIN</h1>
+<input type = "text" placeholder = "name" id = "nameField">
+<input type = "text" placeholder = "age" id = "ageField">
+<button onclick = "writeData"> Submit </button>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAoqWeVXDfvXkkDYzgVqOoHVAECnnFpVXs",
+    authDomain: "itps-1c7c7.firebaseapp.com",
+    databaseURL: "https://itps-1c7c7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "itps-1c7c7",
+    storageBucket: "itps-1c7c7.appspot.com",
+    messagingSenderId: "243267301025",
+    appId: "1:243267301025:web:1ab4819ae596b1ec6a0ae0",
+    measurementId: "G-BRE9KFW8V0"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  
+  function writeData(){
+	firebase.database().ref("orang").set({
+			
+			name: document.getElementById("nameField").value,
+			age: document.getElementById("ageField").value,
+	
+	});
+  
+  }
+  
+  
+  
+  
+</script>
+
+</body>
+
+</html>

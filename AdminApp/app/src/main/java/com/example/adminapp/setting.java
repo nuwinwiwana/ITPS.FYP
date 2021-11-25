@@ -1,17 +1,13 @@
-package com.example.enforcementapp;
+package com.example.adminapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
 
 public class setting extends AppCompatActivity {
 
@@ -37,7 +33,7 @@ public class setting extends AppCompatActivity {
         c2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(setting.this, scanner.class));
+                startActivity(new Intent(setting.this,ApplicantList.class));
             }
         });
 
@@ -49,5 +45,6 @@ public class setting extends AppCompatActivity {
             }
         });
     }
-   
+
+
 }

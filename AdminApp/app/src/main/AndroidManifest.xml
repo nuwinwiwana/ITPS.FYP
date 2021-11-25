@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.adminapp">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdminApp">
+        <activity android:name=".QrGen"></activity>
+        <activity android:name=".person" />
+        <activity android:name=".ApplicantList" />
+        <activity android:name=".editprofilepage" />
+        <activity android:name=".profile" />
+        <activity android:name=".setting" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".forgotPassword" />
+        <activity android:name=".register" />
+        <activity android:name=".verify" />
+        <activity android:name=".Login" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

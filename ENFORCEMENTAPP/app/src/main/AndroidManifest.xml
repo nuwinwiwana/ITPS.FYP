@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.enforcementapp">
-    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -10,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EnforcementApp">
+        <activity android:name=".scanner"></activity>
         <activity android:name=".editprofilepage" />
         <activity android:name=".profile" />
         <activity android:name=".setting" />
@@ -18,10 +21,11 @@
         <activity android:name=".verify" />
         <activity android:name=".Login" />
         <activity android:name=".register" />
-        <activity android:name=".Capture"
+        <activity
+            android:name=".Capture"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
-            android:theme="@style/zxing_CaptureTheme"/>
+            android:theme="@style/zxing_CaptureTheme" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
