@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbd64b00-cbac-4184-89e0-d08dcb9fb1cf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/java/com/example/enforcementapp/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ENFORCEMENTAPP/app/src/main/java/com/example/enforcementapp/register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/itps_applicant_app/request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/itps_applicant_app/request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/itps_applicant_app/status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/itps_applicant_app/status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_status.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_status.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +45,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1637833314225">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1637848323435">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1637833314225" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1637848323435" />
   </component>
 </project>

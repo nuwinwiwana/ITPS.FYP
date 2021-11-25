@@ -42,6 +42,7 @@ public class register extends AppCompatActivity {
         final EditText password = findViewById(R.id.password);
         final EditText conPassword = findViewById(R.id.conPassword);
         final EditText ic = findViewById(R.id.Ic);
+
         final Button registerBtn = findViewById(R.id.registerBtn);
         final TextView loginNowBtn = findViewById(R.id.loginNow);
 
@@ -62,7 +63,7 @@ public class register extends AppCompatActivity {
                     Toast.makeText(register.this, "password are not matching", Toast.LENGTH_SHORT).show();
                 } else {
 
-                    createAccount(emailTxt,icTxt, passwordTxt, phoneTxt, fullnameTxt);
+                    createAccount(icTxt, emailTxt, passwordTxt, phoneTxt, fullnameTxt);
 
 
 
@@ -93,18 +94,19 @@ public class register extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             //updateUI(user);
 
-                            databaseReference.child("admins").addListenerForSingleValueEvent(new ValueEventListener() {
+                            databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                                     if (snapshot.hasChild(user.getUid())) {
                                         Toast.makeText(register.this, "email is already registered", Toast.LENGTH_SHORT).show();
                                     } else {
-                                        databaseReference.child("admins").child(user.getUid()).child("fullname").setValue(fullname);
-                                        databaseReference.child("admins").child(user.getUid()).child("email").setValue(email);
-                                        databaseReference.child("admins").child(user.getUid()).child("password").setValue(password);
-                                        databaseReference.child("admins").child(user.getUid()).child("phone").setValue(phone);
-                                        databaseReference.child("admins").child(user.getUid()).child("ic").setValue(ic);
+                                        databaseReference.child("users").child(user.getUid()).child("fullname").setValue(fullname);
+                                        databaseReference.child("users").child(user.getUid()).child("email").setValue(email);
+                                        databaseReference.child("users").child(user.getUid()).child("password").setValue(password);
+                                        databaseReference.child("users").child(user.getUid()).child("phone").setValue(phone);
+                                        databaseReference.child("users").child(user.getUid()).child("ic").setValue(ic);
+
                                         Toast.makeText(register.this, "user registered succsesfully", Toast.LENGTH_SHORT).show();
                                         if(!user.isEmailVerified()){
                                             startActivity(new Intent(register.this,verify.class));
@@ -112,7 +114,6 @@ public class register extends AppCompatActivity {
                                         finish();
                                     }
                                 }
-
                                 @Override
                                 public void onCancelled(@NonNull DatabaseError error) {
 
