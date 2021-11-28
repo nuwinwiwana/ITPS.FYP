@@ -45,7 +45,7 @@ public class dashboard extends AppCompatActivity {
         widget = findViewById(R.id.widget);
         c1 = findViewById(R.id.card1);
         c2 = findViewById(R.id.card2);
-        c3 = findViewById(R.id.card3);
+
         databaseReference = FirebaseDatabase.getInstance();
 
 
@@ -97,13 +97,6 @@ public class dashboard extends AppCompatActivity {
         });
 
 
-        c3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, activityHistory.class));
-                startActivity(new Intent(dashboard.this, ApplicantList.class));
-            }
-        });
 
 
     }

@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="Type of Veichle"
+        android:hint="Type of Vehicle"
         android:inputType="text"
         android:maxLines="1"
         android:paddingStart="20dp"
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="Veichle Plate"
+        android:hint="Vehicle Plate"
         android:inputType="text"
         android:maxLines="1"
         android:paddingStart="20dp"
@@ -230,16 +230,15 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"  />
 
+
     <ImageView
+        android:id="@+id/IcImage"
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:id="@+id/IcImage"
-        android:layout_marginTop="10dp"
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="30dp"
-        android:background="@drawable/documents__1_"
-        />
-
+        android:layout_marginTop="10dp"
+        android:background="@drawable/documents__1_" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/uploadIcCopy"

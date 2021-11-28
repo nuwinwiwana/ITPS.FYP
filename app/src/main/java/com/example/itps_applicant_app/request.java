@@ -192,14 +192,19 @@ public class request extends AppCompatActivity {
 
                 // below line is for checking weather the
                 // edittext fields are empty or not.
-                if ( TextUtils.isEmpty(destinationAddTxt) && TextUtils.isEmpty(travelReasTxt) && TextUtils.isEmpty(returnDateTxt) && TextUtils.isEmpty(DepatureDateTxt) && TextUtils.isEmpty(dependentTxt) && TextUtils.isEmpty(veichlePlateTxt) && TextUtils.isEmpty(VeichleTypeTxt) && TextUtils.isEmpty(policeStnTxt) && TextUtils.isEmpty(namaTxt) && TextUtils.isEmpty(idTxt) && TextUtils.isEmpty(citizenshipTxt) && TextUtils.isEmpty(addressTxt)) {
+                if ( TextUtils.isEmpty(destinationAddTxt) && TextUtils.isEmpty(travelReasTxt)
+                        && TextUtils.isEmpty(returnDateTxt) && TextUtils.isEmpty(DepatureDateTxt) && TextUtils.isEmpty(dependentTxt)
+                        && TextUtils.isEmpty(veichlePlateTxt) && TextUtils.isEmpty(VeichleTypeTxt) && TextUtils.isEmpty(policeStnTxt)
+                        && TextUtils.isEmpty(namaTxt) && TextUtils.isEmpty(idTxt) && TextUtils.isEmpty(citizenshipTxt)
+                        && TextUtils.isEmpty(addressTxt)) {
                     // if the text fields are empty
                     // then show the below message.
                     Toast.makeText(request.this, "Please add some data.", Toast.LENGTH_SHORT).show();
                 } else {
                     // else call the method to add
                     // data to our database.
-                    addDatatoFirebase(idTxt,travelReasTxt,destinationAddTxt,returnDateTxt,returnDateTxt,DepatureDateTxt,dependentTxt,veichlePlateTxt,VeichleTypeTxt,addressTxt,citizenshipTxt,policeStnTxt,namaTxt);
+                    addDatatoFirebase(idTxt,travelReasTxt,destinationAddTxt,returnDateTxt,returnDateTxt,DepatureDateTxt,
+                            dependentTxt,veichlePlateTxt,VeichleTypeTxt,addressTxt,citizenshipTxt,policeStnTxt,namaTxt);
                 }
 
             }
