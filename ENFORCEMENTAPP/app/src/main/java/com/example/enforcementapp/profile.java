@@ -31,7 +31,8 @@ public class profile extends AppCompatActivity {
 
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference databaseReference = database.getReferenceFromUrl("https://itps-1c7c7-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    DatabaseReference databaseReference = database.getReferenceFromUrl
+            ("https://itps-1c7c7-default-rtdb.asia-southeast1.firebasedatabase.app/");
     StorageReference storageReference = FirebaseStorage.getInstance().getReference();
     String UID = Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid();
     FirebaseAuth fAuth;
